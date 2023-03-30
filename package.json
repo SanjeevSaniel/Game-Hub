@@ -1,10 +1,13 @@
 {
   "name": "game-hub-rawg",
   "private": true,
+  "homepage": "https://sanjeevsaniel.github.io/Game-Hub/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
